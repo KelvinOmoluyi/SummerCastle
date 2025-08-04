@@ -2,8 +2,8 @@
 
 $host = "localhost";
 $dbusername = "root";
-$dbpassword = "kelvincoding";
-$dbname = "summercastledb";
+$dbpassword = "";
+$dbname = "";
 $dsn = "mysql:host=$host;dbname=$dbname";
 
 
