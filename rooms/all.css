@@ -1,0 +1,477 @@
+html {
+    font-size: 62.5%;
+    --color1: rgb(207, 176, 0);
+    --second-theme-color: #a88204;
+    --color2: white;
+    --content1: #f7f4f4;
+}
+
+a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--color2);
+    margin: 0 1rem;
+    font-family: Arima;
+    animation: fade-in 0.25s ease;
+    animation-duration: 2s;
+}
+
+body {
+    background-color: var(--content1);
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0.01rem;
+}
+
+.hotels {
+    background-color: var(--content1);
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.hotels .hotel-room {
+    max-width: 130rem;
+    width: 98%;
+    background-color: var(--color2);
+    height: 60rem;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+.hotel-room .words{
+    width: 42%;
+    padding: 2rem 3rem 2rem 2rem;
+}
+
+.words .words-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.words .words-1 .words-1-words {
+    border-top: 1px dotted rgba(0, 0, 0, 0.7);
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+}
+
+.words .words-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    height: fit-content;
+}
+
+.words-2 .words-2-words {
+    width: 75%;
+    text-wrap: wrap;
+}
+
+.words-2 .words-2-words p{
+    font-size: 5.7rem;
+    line-height: 6.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.words-2 .words-2-image {
+    width: 25%;
+    position: relative;
+    height: 12rem;
+}
+
+.words-2-image .img1 {
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../Poeplelaughing/Children.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    border-radius: 3rem;
+}
+
+.words-2-image .img2 {
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../Poeplelaughing/summer-holidays.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    border-radius: 3rem;
+}
+
+.words-2-image .img3 {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-image: url(../Poeplelaughing/woman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 3rem;
+}
+
+.words .acquainted {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.words .acquainted .word {
+    width: fit-content;
+}
+
+.words .acquainted .word p {
+    font-weight: 500;
+}
+
+.words .acquainted .line {
+    color: red;
+    flex-grow: 1;
+}
+
+
+
+/* --------------------------- actions ----------------------------------- */
+.action {
+    margin-top: 6rem;
+}
+
+.action .comments {
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
+}
+
+.comments .comments-words {
+    width: 67%;
+}
+
+.comments .comments-btn {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments .comments-btn .btn {
+    background-color: var(--second-theme-color);
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 2.5rem;
+    color: var(--color2);
+    text-align: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+    
+.comments .comments-btn .btn a {
+    display: block;
+}
+
+.comments .comments-btn .btn:hover {
+    width: 14rem;
+}
+
+
+
+.action .ratings {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.ratings .rating1 {
+    text-align: left;
+    width: 13rem;
+    padding-right: 1rem;
+}
+
+.ratings .rating2 {
+    text-align: center;
+    width: 19rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.7);
+    border-right: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.ratings .rating3 {
+    text-align: center;
+    width: 19rem;
+}
+
+
+
+
+/* -------------------- Hotel image ---------------------------------------------- */
+.hotels .image {
+    width: 58%;
+    background-image: url(../img/master-bedroom.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.image .contact {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    height: 4rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .word {
+    width: fit-content;
+    background-color: white;
+    padding: 0.5rem 3.1rem;
+    border-radius: 2rem;
+}
+
+.contact .word a {
+    display: block;
+    color: black;
+}
+
+.contact .icon {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.8rem 0.9rem;
+}
+
+
+
+.image .location {
+    position: absolute;
+    top: 7rem;
+    left: 5rem;
+    width: 23rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.location .word {
+    width: 12rem;
+    height: 100%;
+    border-radius: 1.5rem;
+    padding: 0.4rem;
+}
+
+.location .link-pic {
+    border-radius: 1.5rem;
+    background-color: var(--second-theme-color);
+    width: 4rem;
+    padding-top: 0.4rem;
+    border-radius: 3rem;
+    margin-top: 0.5rem;
+}
+
+.location .room-link {
+    width: 9rem;
+    height: 100%;
+    padding: 0;
+    margin-left: 0.5rem;
+}
+
+.location .picture {
+    width: 9rem;
+    height: 100%;
+    background-image: url(../img/master-bedroom.jpg);
+    background-size: 250%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> responsive settings >>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 1400px) {
+    :root {
+        font-size: 71%;
+    }
+}
+
+/* Responsive settings */
+@media (min-width: 1230px) {
+    :root {
+        font-size: 60%;
+    }
+    
+}
+
+
+
+
+/*------------------------------------------------responsive setting --------------------------------------------------*/
+@media (max-width: 1066px) {
+    :root {
+        font-size: 59%;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------responsive setting --------------------------------------------------*/
+@media (max-width: 1014px) {
+    .words-2 .words-2-words p{
+        font-size: 4.6rem;
+        line-height: 5rem;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .action {
+        margin-top: 3rem;
+    }
+
+    .action .ratings h2{
+        font-size: 4rem;
+    }
+}
+
+
+
+
+
+/*------------------------------------------------responsive setting --------------------------------------------------*/
+@media (max-width: 834px) {
+    .hotels .hotel-room {
+        width: 98%;
+        height: 80rem;
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .hotel-room .words{
+        width: 100%;
+    }
+    
+    .words .words-2{
+        height: 9rem;
+    }
+
+    .words-2 .words-2-words p{
+        font-size: 4.1rem;
+    }
+
+    .words-2 .words-2-image {
+        height: 8rem;
+    }
+
+    .action {
+        margin-top: 1rem;
+    }
+
+    .action .ratings h2{
+        font-size: 3.5rem;
+    }
+
+    .action .ratings {
+        margin-top: 1rem;
+    }
+
+
+
+    .hotels .image,
+    .hotels .image2,
+    .hotels .image3,
+    .hotels .image4,
+    .hotels .image5,
+    .hotels .image6 {
+        width: 100%;
+        background-image: url(../img/master-bedroom.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 2rem;
+        position: relative;
+        height: 40rem;
+    }
+    
+    .image .location {
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .image .location {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+    }
+
+    .image .location,
+    .image2 .location,
+    .image3 .location,
+    .image4 .location,
+    .image5 .location,
+    .image6 .location {
+        position: absolute;
+        top: 20rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .image .location,
+    .image2 .location,
+    .image3 .location,
+    .image4 .location,
+    .image5 .location,
+    .image6 .location {
+        position: absolute;
+        top: 18rem;
+        left: 2rem;
+    }
+}
+
+@media (max-width: 344px) {
+}
+

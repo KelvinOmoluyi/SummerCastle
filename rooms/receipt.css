@@ -1,0 +1,155 @@
+html {
+    font-size: 62.5%;
+    --color1: rgb(211, 180, 2);
+    --second-theme-color: #bd9204;
+    --color2: white;
+    --content1: #f7f4f4;
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+}
+
+body {
+    background-color: var(--content1);
+    height: 100%;
+    width: 100%;
+}
+
+.receipt-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receipt {
+    height: 56rem;
+    width: 80rem;
+    padding: 1rem;
+    background-color: var(--color2);
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+.receipt .pic {
+    width: 45%;
+    height: 100%;
+    background-image: url(../img/Shaking-hand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.receipt .details {
+    width: 65%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    row-gap: 1rem;
+}
+
+.details .word {
+    width: 100%;
+    height: fit-content;
+    border-radius: 3rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    background-color: var(--content1);
+    box-shadow: 0rem 0rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.details .word .mark {
+    height: 8rem;
+    width: 8rem;
+    background-image: url(../img/mark_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 4rem;
+}
+
+.details .receipt-details {
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--second-theme-color);
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 0.1rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.details .receipt-details .info {
+    color: var(--color2);
+}
+
+.details .info p{
+    font-family: Arima;
+    font-weight: 500;
+}
+
+.details .trouble-con {
+    width: 100%;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: var(--content1);
+    box-shadow: 0rem 0rem 0.1rem rgba(0, 0, 0, 0.5);
+    padding: 0.2rem;
+}
+
+.trouble-con .form-entry {
+    background-color: var(--second-theme-color);
+    padding: 0.8rem 3rem;
+    width: fit-content;
+    border-radius: 3rem;
+    transition: .25s;
+}
+
+.trouble-con .form-entry:hover {
+    padding: 0.8rem 4rem;
+}
+
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 612px) {
+    .glass-menu {
+        margin-top: 1rem;
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 565px) {
+    .receipt .pic {
+        display: none;
+    }
+
+    .receipt .details {
+        width: 100%;
+    }
+}
