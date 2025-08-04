@@ -1,0 +1,24 @@
+<section class="home">
+        <header id="header">
+            <div class="nav-box">
+                <nav class="navbar">
+                    <div class="icon">
+                        <img width="60" height="60" src="https://img.icons8.com/dotty/80/FFFFFF/castle.png" alt="castle"/>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="/rooms/all.php">About</a></li>
+                            <li><a href="all.php">Rooms</a></li>
+                        </ul>
+        
+                        <span class="active-nav"></span>
+                    </div>
+                    <div class="join">
+                        <li><a href="../entry/signin.php">Sign up</a></li>
+                        <li><a href="../entry/Signin.php">Sign in</a></li>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>

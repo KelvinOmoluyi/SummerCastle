@@ -1,0 +1,17 @@
+                        <div class="input-field">
+                            <input type="text" placeholder="Full Name" name="name" id="username" required>
+                        </div>
+        
+                        <div class="input-field">
+                            <input type="email" placeholder="Email Address" name="email" id="email" required>
+                        </div>
+            
+            
+                        <div class="input-field">
+                            <input type="password" placeholder="Password" name="password" id="password" required>
+                        </div>
+        
+                        <div class="input-field">
+                            <p>Choose your plan</p>
+                            <input type="text" placeholder="Enter Request" name="plan" id="plan" required>
+                        </div>
