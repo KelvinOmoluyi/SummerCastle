@@ -1,0 +1,157 @@
+html {
+    font-size: 62.5%;
+    --color1: rgb(211, 180, 2);
+    --second-theme-color: #bd9204;
+    --color2: white;
+    --content1: #f7f4f4;
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+}
+
+body {
+    background-color: var(--content1);
+    height: 100%;
+    width: 100%;
+}
+
+.account-section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account {
+    height: 55rem;
+    width: 80rem;
+    padding: 1rem;
+    background-color: var(--color2);
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+.account .pic {
+    width: 45%;
+    height: 100%;
+    background-image: url(../img/Shaking-hand.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.account .details {
+    width: 65%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    row-gap: 2rem;
+}
+
+.details .acc-pic {
+    height: 18rem;
+    width: 18rem;
+    background-color: var(--content1);
+}
+
+.details .acc-pic img {
+    height: 18rem;
+    width: 18rem;
+}
+
+.details form input {
+    margin-left: calc(50% - 10rem);
+}
+
+.details a {
+    color: blue;
+}
+
+.details .form-entry {
+    background-color: var(--second-theme-color);
+    padding: 0.8rem 3rem;
+    width: fit-content;
+    border-radius: 3rem;
+    margin: 0 auto;
+    transition: .25s;
+}
+
+.details .form-entry:hover {
+    padding: 0.8rem 4rem;
+}
+
+.details .info {
+    width: 90%;
+    height: 4rem;
+    background-color: var(--content1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.1rem rgba(128, 128, 128, 0.384);
+    padding: 1rem 1.5rem;
+}
+
+.details .info p{
+    font-family: Arima;
+    font-weight: 500;
+}
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 700px) {
+    .account .pic {
+        width: 30%;
+    }
+
+    .account .details {
+        width: 70%;
+    }
+}
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 612px) {
+    .glass-menu {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 604px) {
+    .account {
+        height: 50rem;
+        width: 80rem;
+        padding: 0.5rem;
+        margin: 0.2rem;
+    }
+
+    .account .pic {
+        display: none;
+    }
+
+    .account .details {
+        width: 100%;
+    }
+}

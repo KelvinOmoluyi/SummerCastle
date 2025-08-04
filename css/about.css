@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%;
+    --color1: rgb(211, 180, 2);
+    --second-theme-color: #bd9204;
+    --color2: white;
+    --content1: #f7f4f4;
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    background-image: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+}
+
+.glass-menu {
+    margin-top: 2rem;
+}
+
+body {
+    background-color: var(--content1);
+}
+
+.about {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 0 3rem;
+}
+
+.about .big-words h1{
+    color: var(--second-theme-color);
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.about .medium-words h4{
+    color: var(--second-theme-color);
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.about .small-words p{
+    text-wrap: wrap;
+    text-align: center;
+}

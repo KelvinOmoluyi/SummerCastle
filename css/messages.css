@@ -1,0 +1,116 @@
+.navigation ul li .active1 {
+    background-color: var(--color1);
+}
+
+.navigation ul li .active3 {
+    background-color: var(--second-theme-color);
+}
+
+.navigation ul li .active4 {
+    background-color: var(--color1);
+}
+
+.navigation ul li .active5 {
+    background-color: var(--color1);
+}
+
+.middle-content-segments {
+    height: calc(100% - 15rem);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.middle-content-segments .title {
+    color: black;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.message-block {
+    width: 46%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    height: 22rem;
+}
+.message-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.message-content {
+    margin-top: 10px;
+    color: #555;
+}
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 1122px) {
+    .message-block {
+        width: 46%;
+        height: 27rem;
+    }
+}
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 906px) {
+    .middle-content-segments {
+        height: 80%;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .message-block {
+        width: 96%;
+        height: fit-content;
+    }
+}
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 842px) {
+    .middle-content-segments {
+        height: 75%;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .message-block {
+        width: 96%;
+        height: fit-content;
+    }
+}
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 760px) {
+    .middle-content-segments {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+

@@ -1,0 +1,795 @@
+html {
+    font-size: 62.5%;
+    --color1: rgb(187, 160, 5);
+    --second-theme-color: rgb(168, 130, 4);
+    --color2: white;
+    --content1: #f7f4f4;
+}
+
+.home {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../img/Home-hotel-pic.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+}
+
+.home .home-contents {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    max-width: 55rem;
+}
+
+.home-contents .intro {
+    height: 40rem;
+    position: relative;
+    padding: 2rem;
+    transition: all .5s ease-in-out;
+    animation: fade-in ease;
+    animation-duration: 2s;
+    border-radius: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.home-contents .intro:hover {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.intro .name {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.intro .name h3 {
+    color: var(--color2);
+}
+
+.intro .intro-notice {
+    width: 18rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.home-contents .intro .ui-effect1{
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    top: -1rem;
+    left: -1rem;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+    animation: ui-1-movement 1s ease;
+    animation-delay: 1s;
+}
+
+.home-contents .intro .ui-effect2{
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    bottom: -1rem;
+    right: -1rem;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    animation: ui-2-movement 1s ease;
+    animation-delay: 1s;
+}
+
+@keyframes ui-1-movement {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    50% {
+        left: -2rem;
+        top: -2rem;
+    }
+    60%, 70% {
+        display: none;
+    }
+    71%, 80% {
+        display: block;
+        left: -2rem;
+        top: -2rem;
+    }
+    81%, 90% {
+        display: none;
+    }
+}
+
+@keyframes ui-2-movement {
+    0% {
+        right: 0;
+        bottom: 0;
+    }
+    50% {
+        right: -2rem;
+        bottom: -2rem;
+    }
+    60%, 70% {
+        display: none;
+    }
+    71%, 80% {
+        display: block;
+        right: -2rem;
+        bottom: -2rem;
+    }
+    81%, 90% {
+        display: none;
+    }
+}
+
+.home .home-contents h1 {
+    font-size: 7rem;
+    line-height: 7rem;
+}
+
+.home .home-contents p {
+    color: var(--color2);
+}
+
+
+
+/* About section */
+.about {
+    height: fit-content;
+    max-width: 100%;
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.about .nav-shader {
+    height: 7.5rem;
+    width: 100%;
+    background-color: rgb(177, 150, 1);
+}
+
+.about .about-contents {
+    margin-top: 5rem;
+    width: 100%;
+    height: 85%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5rem;
+    align-items: center;
+    padding-left: 6rem;
+    flex-wrap: wrap;
+}
+
+.about .left-content {
+    display: flex;
+    width: 30%;
+    height: 52rem;
+    min-width: 30rem;
+    flex-direction: column;
+}
+
+.about .about-contents .words {
+    width: 100%;
+    height: 46rem;
+    background-color: var(--content1);
+    padding: 2rem 3rem;
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.about .left-content .browse-pic {
+    background-color: var(--second-theme-color);
+    padding: 1rem;
+    width: 17rem;
+    margin-top: 2.5rem;
+    border-radius: 2.5rem;
+    color: var(--color2);
+    text-align: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.about .left-content .browse-pic a {
+    display: block;
+}
+
+.about .left-content .browse-pic:hover {
+    width: 52%;
+}
+
+.about .about-contents .words h3 {
+    line-height: 3rem;
+}
+
+.about .rating {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.about .rating .rating-l2 {
+    margin-left: 6rem;
+}
+
+.about .right-content {
+    position: absolute;
+    right: 0;
+    width: 63%;
+    max-width: 63%;
+    min-width: 80rem;
+    height: fit-content;
+    overflow-x: auto;
+}
+
+.about .right-content::-webkit-scrollbar {
+    appearance: none;
+}
+
+/* Dark effects ---------------------------------------------------------------------------------- */
+.right-content .darken-effect {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    transition: .5s ease;
+}
+
+.right-content .darken-effect:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.right-content .darken-effect img {
+    color: rgba(255, 255, 255, 0.705);
+    transition: .5s ease;
+}
+
+.right-content .darken-effect:hover img{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.about .about-contents .pics {
+    position: relative;
+    width: 120rem;
+    min-width: 90rem;
+    height: 51rem;
+    padding: 2rem 0;
+    border-radius: 3rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.about .horizontal-pics {
+    height: 100%;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+
+.about .base-pic {
+    height: 48%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about .base-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/modern-room1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 1rem;
+    transition: .25s ease-in-out;
+    border-radius:2rem;
+}
+
+.about .base-img:nth-child(2) {
+    background-image: url(../img/Bed.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 1rem;
+}
+
+.about .base-img:hover {
+    width: 130%;
+}
+
+.about .base-img2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/modern-room2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 1rem;
+    transition: .25s ease-in-out;
+    border-radius:2rem;
+}
+
+.about .base-img2:nth-child(2) {
+    background-image: url(../img/modern-room3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 1rem;
+}
+
+.about .base-img2:hover {
+    width: 130%;
+}
+
+/* Vertical image */
+.about .vertical-pics {
+    height: 90%;
+    width: 27rem;
+    background-image: url(../img/master-bedroom.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    transition: .25s ease-in-out;
+}
+
+.about .vertical-pics:hover {
+    height: 100%;
+}
+
+.about .vertical-pics2 {
+    height: 90%;
+    width: 27rem;
+    background-image: url(../img/master-bedroom3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    transition: .25s ease-in-out;
+}
+
+.about .vertical-pics2:hover {
+    height: 100%;
+}
+
+.right-content .darken-effect {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content .darken-effect:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.darken-effect .link {
+    padding: 0.9rem;
+    border-radius: 12rem;
+    background: transparent;
+    backdrop-filter: blur(0.5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: 0.25s ease;
+    height: 6.9rem;
+}
+
+.darken-effect .link:hover {
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* Offers */
+.offers {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--color2);
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+.offers .offers-hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.offers .promo {
+    height: fit-content;
+    width: 100%;
+    margin: 5rem 0rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.promo .big-words {
+    height: 100%;
+    width: 50%;
+    border-radius: 2rem;
+    display: flex;
+    min-width: 45rem;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+
+.promo .big-words .b-words1 {
+    width: 20%;
+    height: 100%;
+}
+
+.promo .big-words .b-words2 {
+    width: 70%;
+    height: 100%;
+}
+
+.promo .small-words {
+    height: 100%;
+    width: 35%;
+    border-radius: 2rem;
+    display: flex;
+    min-width: 45rem;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.small-words .s-words {
+    padding: .2rem;
+}
+
+.small-words .promo-book {
+    background-color: var(--second-theme-color);
+    width: 30%;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.small-words .promo-book:hover {
+    width: 37%;
+}
+
+
+
+.explore {
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 3rem;
+    margin: 10rem 0;
+}
+
+.explore .explore1 {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    flex-direction: row;
+}
+
+.explore .darken-effect {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 3rem;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore .darken-effect:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.explore1 .e1-pic {
+    width: 43%;
+    height: 20rem;
+    border-radius: 3rem;
+    background-image: url(../img/laughing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.explore1 .e1-words {
+    width: 52%;
+    height: 100%;
+    background-color: var(--content1);
+    border-radius: 3rem;
+    padding: 3.2rem;
+}
+
+.explore1 .e1-words p {
+    margin-top: 5rem;
+}
+
+
+
+.explore .explore2 {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: space-between;
+}
+
+.explore2 .e2-words {
+    width: 55%;
+    height: 100%;
+    background-image: url(../img/gold-wallpaper.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding: 2.2rem;
+}
+
+.explore2 .e2-words h4 {
+    margin-top: 14rem;
+}
+
+.explore2 .e2-pic {
+    height: 15rem;
+    width: 39%;
+    border-radius: 3rem;
+    background-image: url(../img/airplane-wings.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> responsive settings >>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 1500px) {
+    .home {
+        width: 100%;
+        max-width: 100%;
+        height: 75vh;
+    }
+    
+}
+
+
+/* Responsive settings */
+@media (max-width: 1230px) {
+    .about .left-content .browse-pic {
+        width: 17rem;
+    }
+}
+
+
+
+/*------------------------------------------------responsive setting --------------------------------------------------*/
+@media (max-width: 1195px) {
+    .about .about-contents {
+        flex-direction: column-reverse;
+        row-gap: 3rem;
+        justify-content: left;
+        padding-left: 2rem;
+    }
+
+    .about .about-contents .pics {
+        position: relative;
+        width: 120rem;
+        right: 0;
+        min-width: 90rem;
+    }
+
+    .about .right-content {
+        position: relative;
+        min-width: 100%;
+        height: fit-content;
+        overflow-x: auto;
+    }
+
+    .about .left-content {
+        width: 95%;
+        height: fit-content;
+        margin-right: 2rem;
+    }
+
+    .about .about-contents .words {
+        width: 100%;
+        height: fit-content;
+    }
+
+    /* -----------offer promo ----------------------*/
+    .offers .promo {
+        margin: 5rem 0rem;
+        justify-content: space-between;
+        column-gap: 0rem;
+    }
+
+    .promo .big-words {
+        width: 42rem;
+        min-width: 37rem;
+        column-gap: 2rem;
+    }
+
+    .promo .small-words {
+        width: 42rem;
+        min-width: 37rem;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+
+    .small-words .promo-book {
+        width: 14rem;
+    }
+
+    
+}
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 962px) {
+    .home {
+        height: 80rem;
+    }
+
+    .about .about-contents .pics {
+        position: relative;
+        width: 110rem;
+        right: 0;
+        min-width: 90rem;
+        padding: 0 2rem 0 0;
+    }
+
+    .promo .big-words {
+        min-width: 100%;
+    }
+
+    .promo .small-words {
+        width: 90%;
+    }
+
+    .offers .promo {
+        margin: 5rem 0rem;
+        justify-content: space-between;
+        row-gap: 3rem;
+    }
+
+    .explore {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+        margin: 10rem 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+    }
+
+    .explore .explore1 {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .explore .u-promo {
+        position: absolute;
+        bottom: 2rem;
+    }
+
+    .explore .explore2 {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .explore .e1-words {
+        position: relative;
+    }
+
+    .explore .e2-words {
+        position: relative;
+    }
+
+    .explore1 .e1-words p {
+        margin-top: 0rem;
+    }
+
+    .explore1 .e1-pic {
+        height: 100%;
+    }
+
+    .explore2 .e2-pic {
+        height: 100%;
+    }
+    
+    .small-words .promo-book:hover {
+        width: 17rem;
+    }
+}
+
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 490px) {
+    .explore .explore1 {
+        width: 100%;
+        height: 45rem;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .explore1 .e1-pic {
+        width: 100%;
+    }
+
+    .explore .explore2 {
+        width: 100%;
+        height: 45rem;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .explore .e1-words {
+        position: relative;
+        width: 100%;
+    }
+
+    .explore .e1-words h3{
+        width: 100%;
+    }
+
+
+    .explore2 .e2-pic {
+        width: 100%;
+    }
+
+    .explore .e2-words {
+        position: relative;
+        width: 100%;
+    }
+
+    .footer .no2 {
+        display: none;
+    }
+
+    .footer {
+        column-gap: 3rem;
+    }
+}
+
+
+
+
+
+/*-----------------------------------responsive setting -----------------------------------*/
+@media (max-width: 465px) {
+    .home {
+        height: 100vh;
+    }
+}
+
